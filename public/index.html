@@ -6,6 +6,20 @@
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    </script>
   </head>
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -23,28 +37,28 @@
     
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item">
+          <a class="navbar-item" href="index.html">
             Home
           </a>
     
-          <a class="navbar-item">
-            Documentation
+          <a class="navbar-item" href="about.html">
+            About
           </a>
     
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
-              More
+              Resources
             </a>
     
             <div class="navbar-dropdown">
-              <a class="navbar-item">
-                About
+              <a class="navbar-item" href="learn.html">
+                Learn
               </a>
-              <a class="navbar-item">
-                Jobs
+              <a class="navbar-item" href="read.html">
+                Read
               </a>
-              <a class="navbar-item">
-                Contact
+              <a class="navbar-item" href="community.html">
+                Community
               </a>
               <hr class="navbar-divider">
               <a class="navbar-item">
@@ -55,6 +69,11 @@
         </div>
       </div>
     </nav>
+
+    
+    <!-- BEGIN CONTENT -->
+    
+
     <section class="hero is-primary is-medium">
       <div class="hero-body">
         <div class="container">
@@ -67,5 +86,10 @@
         </div>
       </div>
     </section>
+    
+    
+    <!-- END CONTENT -->
+
+    
   </body>
 </html>
