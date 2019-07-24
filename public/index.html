@@ -25,17 +25,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
-            <img alt="Brand" src="img/logo.png" width="30" height="30">
+          <a class="navbar-brand" href="#top">
+            <img alt="Brand" src="img/logo.png" width="25" height="25">
           </a>
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
+            <li class="active"><a href="#about">About <span class="sr-only">(current)</span></a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
@@ -46,7 +47,7 @@
                 <li role="separator" class="divider"></li>
                 <li><a href="#">One more separated link</a></li>
               </ul>
-            </li>
+            </li>-->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -56,7 +57,7 @@
 
     <!-- BEGIN JUMBO -->
     
-    <div class="jumbotron text-center" style="margin-top:3em;background-color:rgb(7, 135, 145);color:antiquewhite">
+    <div id="top" class="jumbotron text-center" style="margin-top:3em;background-color:rgb(7, 135, 145);color:antiquewhite">
       <div class="container">
         <h1>The Occidental Language</h1>
         <p>International Auxiliary Language</p>
@@ -68,18 +69,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
     <!-- BEGIN WHAT IS -->
 
-    <div class="container">
+    <div id="about" class="container">
       <div class="row">
         <h1 class="text-center">What is Occidental?</h1>
       </div>
@@ -95,7 +87,7 @@
 
     <!-- BEGIN FAQ -->
 
-    <div class="container">
+    <div id="faqs" class="container">
       <div class="row">
         <h1 class="text-center">Frequently Asked Questions</h1>
       </div>
@@ -188,7 +180,7 @@
 
     <!-- BEGIN RESOURCES -->
 
-    <div class="container">
+    <div id="resources" class="container">
       <div class="row">
         <h1 class="text-center">Resources</h1>
       </div>
@@ -240,7 +232,20 @@
 
     <!-- END RESOURCES -->
 
+    <!-- BEGIN FOOTER -->
 
+    <div class="navbar navbar-default">
+        <div class="container">
+          <p class="navbar-text pull-left">
+            © 2019
+          </p>
+    
+          <a href="https://gitlab.com/occidental-lang/occidental-lang.gitlab.io/issues" class="navbar-btn btn-info btn pull-right">
+          <img src="img/gitlab-logo.png" width="30" height="30"> Contribute on Gitlab</a>
+        </div>
+    </div>
+
+    <!-- END FOOTER-->
 
 
 
