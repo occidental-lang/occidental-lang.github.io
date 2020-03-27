@@ -1,0 +1,77 @@
+:root {
+    --brand-accent: rgb(12, 94, 100);
+    --brand-bg: burlywood;
+    --brand-neutral: rgb(228, 228, 228);
+}
+
+body {
+    background-color:var(--brand-bg);
+}
+
+div {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,blockquote {
+    font-family: 'Merriweather', serif;
+}
+
+blockquote {
+    font-size: inherit;
+}
+
+blockquote footer {
+    color: var(--brand-neutral);
+}
+
+.linkBlob {
+    background-color: var(--brand-accent);
+    color:var(--brand-bg);
+    margin:1em;
+    padding:1em;
+    border:2mm solid var(--brand-accent);
+}
+
+.linkBlob:hover {
+    color: var(--brand-neutral);
+}
+
+.linkBlob a {
+    color:inherit;
+    text-decoration:none;
+}
+
+.navbar {
+    background-color: var(--brand-neutral);
+}
+
+.jumbotron {
+    margin-top:3em;
+    background-color:var(--brand-accent);
+    color:var(--brand-bg);
+}
+
+.myWell {
+    background-color: var(--brand-accent);
+    color:var(--brand-bg);
+    margin:1em;
+    padding:3em;
+    border:2mm solid var(--brand-accent);
+}
+
+.myWell a {
+    color:inherit;
+    text-decoration:underline;
+}
+
+.myWell a:hover {
+    color: var(--brand-neutral);
+}
+
+hr {
+    border-top: 2px solid var(--brand-neutral);
+}
+
+.glyphicon {
+    color: var(--brand-neutral)
+}
