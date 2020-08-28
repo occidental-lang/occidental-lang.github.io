@@ -94,41 +94,17 @@ title: The Occidental Language
       <div class="row">
         <h2 class="text-center">Learn</h2>
       </div>
-      <div class="container myWell" style="border-radius: 20% 50% / 40% 10%;">
-        <div class="row text-center">
-          <div class="col-md-4">
-            <a href="https://en.wikibooks.org/wiki/Salute,_Jonathan!">
-              <img src="img/wikibooks-logo.png" alt="wikibooks logo" height="50px" class="img-circle">
-              <p><em>Salute, Jonathan!</em> Natural Acquisition Course</p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://www.memrise.com/course/5677798/salute-jonathan-un-occidental-interlingue-cursu/">
-              <img src="img/memrise-logo.jpg" alt="memrise logo" height="50px" class="img-circle">
-              <p><em>Salute, Jonathan!</em> Memrise Flashcards</p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="resources/OccidentalCourseIn10Lessons-EnglishTranslation.pdf">
-              <img src="img/logowerner.png" alt="occidental old logo" height="50px" class="img-circle">
-              <p>Occidental Course in 10 Lessons (1929, updated 2019)</p>
-            </a>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-6">
-            <a href="resources/cursberger.pdf">
-              <img src="img/logo.png" alt="occidental logo" height="50px" class="img-circle">
-              <p>Curs de Occidental (Interlingue) by Ric Berger</p>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <a href="resources/LOccidental_-_Langue_dintercomprehension_immediate.pdf">
-              <img src="img/logowerner.png" alt="occidental old logo" height="50px" class="img-circle">
-              <p>L'OCCIDENTAL - Langue d'intercompréhension immédiate</p>
-            </a>
-          </div>
-        </div>
+      <div class="container myWell" style="style="align-content:space-evenly;justify-content:center;display:flex;flex-direction:row;flex-wrap:wrap; border-radius: 20% 50% / 40% 10%;">
+        {% for item in site.links %}
+          {% if item.type == "learn" }
+            <div style="width:150px;height:150px">
+              <a href="{{ item.url }}">
+                <img src="{{ item.imageURL }}" alt="{{ item.imageAlt }}" height="50px" class="img-circle">
+                <p>{{ item.name }}</p>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
 
@@ -143,7 +119,7 @@ title: The Occidental Language
       <div class="container myWell" style="style="align-content:space-evenly;justify-content:center;display:flex;flex-direction:row;flex-wrap:wrap; border-radius: 20% 50% / 40% 10%;">
         {% for item in site.links %}
           {% if item.type == "tools" }
-            <div>
+            <div style="width:150px;height:150px">
               <a href="{{ item.url }}">
                 <img src="{{ item.imageURL }}" alt="{{ item.imageAlt }}" height="50px" class="img-circle">
                 <p>{{ item.name }}</p>
@@ -251,51 +227,17 @@ title: The Occidental Language
       <div class="row">
         <h2 class="text-center">Community</h2>
       </div>
-      <div class="container myWell" style="border-radius: 30% 20% / 30% 40%;">
-        <div class="row text-center">
-          <h3>Forums</h3>
-          <div class="col-md-4">
-            <a href="https://www.facebook.com/groups/403123056383240/">
-              <img src="img/fb-logo.png" alt="facebook logo" height="50px" class="img-circle">
-              <p>Facebook Group</p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://groups.io/g/interlingue">
-              <img style="background-color: darkblue;" src="img/groupsio.png" alt="groups.io logo" height="50px" class="img-circle">
-              <p>Email List</p>
-            </a>
-          </div>
-          
-          <div class="col-md-4">
-            <a href="https://reddit.com/r/interlingue">
-              <img src="img/reddit-logo.png" alt="reddit logo" height="50px" class="img-circle">
-              <p>Subreddit</p>
-            </a>
-          </div>
-        </div>
-        <div class="row text-center">
-          <h3>Instant Messaging</h3>
-          <p><i><b>Note</b>: All of these chat rooms are bridged together via Matrix, so you only need to join one.</i></p>
-          <div class="col-md-4">
-            <a href="https://t.me/occidental_lang">
-              <img src="img/telegram.png" alt="telegram logo" height="50px" class="img-circle">
-              <p>Telegram</p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://matrix.to/#/#occidental-lang:chat.weho.st">
-              <img src="img/matrix-logo.svg" alt="Matrix logo" height="50px" class="img-circle">
-              <p>Matrix</p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://discord.gg/HDzAYU4">
-              <img src="img/Discord-Logo-Color.png" alt="discord logo" height="50px" class="img-circle">
-              <p>Discord</p>
-            </a>
-          </div>
-        </div>
+      <div class="container myWell" style="style="align-content:space-evenly;justify-content:center;display:flex;flex-direction:row;flex-wrap:wrap; border-radius: 20% 50% / 40% 10%;">
+        {% for item in site.links %}
+          {% if item.type == "community" }
+            <div style="width:150px;height:150px">
+              <a href="{{ item.url }}">
+                <img src="{{ item.imageURL }}" alt="{{ item.imageAlt }}" height="50px" class="img-circle">
+                <p>{{ item.name }}</p>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
 
