@@ -1,5 +1,6 @@
 ---
 name: Community Dictionaries with Search
-image: fdsa
-url: fdsa
+imageURL: fdsa
+imageAlt: Occidental Logo
+url: https://occidental-lang.com/dictionaries/
 ---
