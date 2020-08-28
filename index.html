@@ -140,42 +140,15 @@ title: The Occidental Language
       <div class="row">
         <h2 class="text-center">Tools</h2>
       </div>
-      <div class="container myWell" style="border-radius: 20% 50% / 40% 10%;">
-        <div class="row text-center">
-          <div class="col-md-6">
-            <a href="https://occidental-lang.com/dictionaries/">
-              <img src="img/occidental-logo2.png" alt="Occidental old style logo" height="50px" class="img-circle">
-              <p>Community Dictionaries with Search</p>
-            </a>
-          </div> 
-          <div class="col-md-6">
-            <a href="https://tatoeba.org/eng/Sentences/show_all_in/ile/none">
-              <img src="img/tatoeba.png" alt="Tatoeba logo" height="50px" class="img-circle">
-              <p>Tatoeba phrase translations</p>
-            </a>
-          </div> 
-        </div>
-        <div class="row text-center">
-          
-          <div class="col-md-4">
-            <a href="https://occidental-lang.com/derive-from-verb/">
-              <img src="img/occidental-logo2.png" alt="Occidental old style logo" height="50px" class="img-circle">
-              <p>Verb Derivation Tool</p>
+      <div class="container myWell" style="style="align-content:space-evenly;justify-content:center;display:flex;flex-direction:row;flex-wrap:wrap; border-radius: 20% 50% / 40% 10%;">
+        {% for item in site.tools %}
+          <div>
+            <a href="{{ item.url }}">
+              <img src="{{ item.imageURL }}" alt="{{ item.imageAlt }}" height="50px" class="img-circle">
+              <p>{{ item.name }}</p>
             </a>
           </div>
-          <div class="col-md-4">
-            <a href="https://addons.mozilla.org/en-US/firefox/addon/interlingue-spell-checker/">
-              <img src="img/firefox-logo.png" alt="firefox logo" height="50px" class="img-circle">
-              <p>Interlingue spellchecker for Firefox</p>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://glosbe.com/ie/en">
-              <img src="img/glosbe-logo.png" alt="glosbe logo" height="50px" class="img-circle">
-              <p>Glosbe dictionary + translation</p>
-            </a>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
 
