@@ -141,13 +141,15 @@ title: The Occidental Language
         <h2 class="text-center">Tools</h2>
       </div>
       <div class="container myWell" style="style="align-content:space-evenly;justify-content:center;display:flex;flex-direction:row;flex-wrap:wrap; border-radius: 20% 50% / 40% 10%;">
-        {% for item in site.tools %}
-          <div>
-            <a href="{{ item.url }}">
-              <img src="{{ item.imageURL }}" alt="{{ item.imageAlt }}" height="50px" class="img-circle">
-              <p>{{ item.name }}</p>
-            </a>
-          </div>
+        {% for item in site.links %}
+          {% if item.type == "tools" }
+            <div>
+              <a href="{{ item.url }}">
+                <img src="{{ item.imageURL }}" alt="{{ item.imageAlt }}" height="50px" class="img-circle">
+                <p>{{ item.name }}</p>
+              </a>
+            </div>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
