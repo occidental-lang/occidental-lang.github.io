@@ -1,1 +1,6 @@
-collections_dir: links
+collections:
+  - learn
+  - tools
+  - read
+  - faq
+  - community
