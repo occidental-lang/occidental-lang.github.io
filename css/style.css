@@ -8,12 +8,40 @@ body {
     background-color:var(--brand-bg);
 }
 
-div {
-    font-family: 'Montserrat', sans-serif;
+@font-face {
+    font-family: 'Xwisth';
+    src: url(../fonts/XwisthDemoVersion-RpgEE.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'NeugAsia';
+    src: url(../fonts/NeugAsiaDemo-PKJVZ.woff2) format('woff2');
 }
 
-h1,h2,h3,h4,h5,blockquote {
+.jumbotron h1 {
+    font-size: 5.5em;
+}
+
+.jumbotron h2 {
+    font-size: 3em;
+}
+
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 3.3em;
+}
+
+h1, h2 {
+    font-family: 'Xwisth', 'Merriweather', serif;
+}
+
+h3, h4,h5,blockquote {
     font-family: 'Merriweather', serif;
+}
+
+div {
+    font-family: 'Montserrat', sans-serif;
 }
 
 blockquote {
