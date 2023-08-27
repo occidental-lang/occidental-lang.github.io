@@ -23,7 +23,7 @@ Ukrajina	Ukraina
 Hej, hej, hej	Hey, hey, hey
 sokoli!	falcones!
 |
-Prěletajte	Vola vu sur
+Prěletajte	Vola for ex
 jamy,	cavas,
 lěsy,	forestes,
 rěky,	riveres,
@@ -39,7 +39,7 @@ stepovy skovranče.	alaude del steppes.
 Hej, hej, hej	Hey, hey, hey
 sokoli!	sokoli (falcones)!
 |
-Izběgajte	Escapa (sur)
+Izběgajte	Escapa for de
 jamy,	cavas,
 lěsy,	forestes,
 polja,	agres,
@@ -115,8 +115,8 @@ zemje naše	nor terre
 |
 Hej, hej, hej sokoli…	Hey, hey, hey falcones…
 |
-Vina, vina, vina,	Culpa, culpa, culpa
-vina dajte	fa culposi
+Vina, vina, vina,	Vin, vin, vin
+vina dajte	da vin
 |
 Ako	Si
 umru	yo mori
