@@ -103,3 +103,7 @@ hr {
 .glyphicon {
     color: var(--brand-neutral)
 }
+
+.row {
+	margin-bottom: 20px;
+}
