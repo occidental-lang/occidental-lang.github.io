@@ -13,9 +13,18 @@ body {
     src: url(../fonts/XwisthDemoVersion-RpgEE.woff2) format('woff2');
 }
 @font-face {
-    font-family: 'NeugAsia';
-    src: url(../fonts/NeugAsiaDemo-PKJVZ.woff2) format('woff2');
+  font-family: 'NeugAsia';
+  src: url('../fonts/Neug%20Asia%20Demo.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Fanhen';
+  src: url('../fonts/fanhen.regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Fanhen';
+  src: url('../fonts/modern-hand-fraktur.regular.ttf') format('truetype');
+}
+
 
 .jumbotron h1 {
     font-size: 5.5em;
