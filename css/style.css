@@ -21,7 +21,7 @@ body {
   src: url('../fonts/fanhen.regular.otf') format('opentype');
 }
 @font-face {
-  font-family: 'Fanhen';
+  font-family: 'ModernHandFraktur';
   src: url('../fonts/modern-hand-fraktur.regular.ttf') format('truetype');
 }
 
