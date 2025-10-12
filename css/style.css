@@ -14,11 +14,15 @@ body {
 }
 
 .jumbotron h1 {
-    font-size: 5.5em;
+    font-size: 12vw;
 }
 
 .jumbotron h2 {
-    font-size: 3em;
+    font-size: 8vw;
+}
+
+#logoImg {
+    width: 20vw;
 }
 
 h1 {
